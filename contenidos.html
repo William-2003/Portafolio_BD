@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción al portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</head>
+<body style="background-color: rgb(233, 237, 168);">
+
+  <br>
+
+  
+  <div class="container" >
+    <h1>Administracion de Bases de Datos II.</h1>
+    <br>
+
+    <!-- barra de navegacion entre html´s -->
+    <ul class="nav nav-pills nav-fill">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="introduccion.html">Introducción</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="contenidos.html">Contenidos de la materia</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="jornalizacion.html">Jornalización</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="calendarizacion.html">Calendarización</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="presentacion.html">Carta de presentación</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="bitacora.html">Bitacora de aprendizaje</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link active" href="conclusion.html">Conclusiones</a>
+      </li>
+    </ul>
+    <HR WIDTH=100% SIZE=10 style="color: rgb(0, 0, 0);"> 
+
+
+    <!-- Contenido de la introduccion  -->
+    <br>
+    <h1>Contenidos de la materia.</h1>
+    <HR WIDTH=45% SIZE=10 style="color: rgb(0, 0, 0);"> 
+    <br>
+
+    <h2>Computo 1</h2>
+    <br>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <!-- semana1 --------- -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+            <b>Semana 1 - INTRODUCCION A LAS BASES DE DATOS NoSQL</b>
+          </button>
+          
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse " aria-labelledby="flush-headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Glosario de temas generales para comprender los SGBD NoSQL.</strong>
+            <p>
+              NoSQL es un enfoque para el diseño de bases de datos que puede
+              adaptarse a una amplia variedad de modelos de datos, incluidos los
+              formatos de clave-valor, documentos, columnas y gráficos. NoSQL, que
+              significa "no solo SQL ", es una alternativa a las bases de datos
+              relacionales tradicionales en las que los datos se colocan en tablas y el
+              esquema de datos se diseña cuidadosamente antes de crear la base
+              de datos.
+            </p>
+            <p><strong>Breve historia de las Bases de Datos NoSQL.</strong>Los conceptos detrás de NoSQL se desarrolló lentamente
+              durante varios años. Los grupos independientes luego tomaron esos ideas y las aplicó a sus propios
+              problemas de datos, creando así las diversas bases de datos NoSQL que existen en la actualidad</p>
+            <p><strong>Caracteristicas de las bases de datos NoSQL.</strong>
+            <ol>
+              <li>Tienen una mayor escalabilidad y por soportar una estructura distribuida.</li>
+              <li>Son más flexibles y permiten hacer cambios en los esquemas sin para la BBDD.</li>
+              <li>Permiten la escalabilidad horizontal y están optimizadas para grandes cantidades de datos.</li>
+            </ol>
+            </p>
+          </div>
+        </div>
+      </div>
+     <!--  semana 2 ------ -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Semana 2 - CLASIFICACION DE LOS GESTORES DE BASES DE DATOS NOSQL
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p><strong>Bases de datos Clave-Valor</strong>
+              Implementan un modelo de
+              datos simple que empareja una clave única con un valor asociado.
+              Debido a que este modelo es simple, puede conducir al desarrollo de bases de datos de valor
+              clave, que son extremadamente eficaces y altamente escalables para la administración de
+              sesiones y el almacenamiento en caché en aplicaciones web.
+            </p> 
+
+            <p><strong>Bases de datos de documentos</strong>
+              Almacenan datos semiestructurados y descripciones de esos datos en formato de documento. Permiten a
+              los desarrolladores crear y actualizar programas sin necesidad de hacer referencia al esquema
+              maestro.
+            </p>
+
+            <p><strong>Bases de datos columnares. </strong>organizan las tablas de datos como columnas en lugar de filas. Los
+              almacenes columnares se pueden encontrar tanto en bases de datos SQL como NoSQL. Los
+              almacenes de columnas anchas pueden consultar grandes volúmenes de datos más rápido
+              que las bases de datos relacionales convencionales.</p>
+            
+            <p><strong>Bases de datos orientadas a grafos. </strong>organizan los datos como nodos, que son como registros
+              en una base de datos relacional, y bordes, que representan conexiones entre nodos. Dado
+              que el sistema de gráficos almacena la relación entre los nodos, puede admitir
+              representaciones más ricas de las relaciones de datos.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- semana 3 --*----- -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Semana 3 - INTRODUCCION A MONGO DB
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p><strong>Introduccion y prinipios de Mongo DB.</strong> MongoDB es una base de datos NoSQL orientada a documentos que se utiliza para el almacenamiento
+              de datos de gran volumen. En lugar de usar tablas y filas como en las bases de datos relacionales
+              tradicionales, MongoDB hace uso de colecciones y documentos.</p>
+              <p><strong>Funciones de MongoBD:</strong>
+              <ul>
+                <li>Cada base de datos contiene colecciones que a su vez contienen documentos. Cada documento
+                  puede ser diferente con un número variable de campos. </li>
+                <li>La estructura del documento está más en línea con la forma en que los desarrolladores construyen
+                  sus clases y objetos en sus respectivos lenguajes de programación</li>
+                <li>Las filas (o documentos como se llaman en MongoDB) no necesitan tener un esquema definido de
+                  antemano. </li>
+              </ul>
+              </p>
+              <p><strong>Conceptos básicos:</strong> Que es una coleccion, un cursor, una base de datos,
+              un documento, un campo, que es un JSON</p>
+              <p><strong>Caracteristicas de MongoDB: </strong>
+              <ul>
+                <li>Orientado a documentos</li>
+                <li>Consultas ad-hoc</li>
+                <li>Indexacion</li>
+              </ul>
+              </p>
+              
+              <strong>Intalacion de MongoDB en Windows</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- semana 4 --*----- -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Semana 4 - Manejo del SGBD NoSQL REDIS
+        </button>
+      </h2>
+
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+
+          <p><strong>REDIS: </strong>El nombre Redis proviene de las iniciales de Remote Dictionary Server (servidor de diccionario remoto),
+            un tipo de servidor apto como memoria rápida para datos. Como sistema de gestión de base de datos
+            (SGBD), Redis ofrece tanto una base de datos en memoria (in-memory database) como de clave-valor
+            (key-value store)</p>
+
+            <p><strong>Ventajas de uso: </strong>
+            <ul>
+              <li>En este tipo de bases de datos, el SGBD guarda todos los datos en la
+                memoria principal, lo cual garantiza una respuesta rápida incluso con grandes conjuntos de datos sin
+                estructurar.</li>
+              <li> Gracias a su sencilla estructura, estas bases de datos también ofrecen un
+                alto rendimiento y pueden escalarse fácilmente.  </li>
+              <li>utiliza una arquitectura con servidor principal y réplica y admite la
+                replicación asíncrona en la que los datos se replican en numerosos servidores de réplicas</li>  
+            </ul>
+            </p>
+            <p><strong>Instalacion de REDIS en Windows.</strong></p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- semana 5 --*----- -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Semana 5 - APACHE CASSANDRA-- NEO4J
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <h4>Apache CASSANDRA</h4>
+          <p><strong>Que es? </strong>es un sistema de administración de
+            bases de datos distribuidas diseñado para
+            manejar un gran volumen de datos estructurados
+            en servidores de productos básicos. Está diseñada para manejar big data. La característica principal de Cassandra es
+            almacenar datos en múltiples nodos sin un solo punto de falla.</p>
+          
+            <p><strong>Principales caracteristicas de Apache Cassandra: </strong>
+            <ul>
+              <li>Arquitectura escalable: gracias a un diseño masterless, en el que todos los nodos son iguales, lo que ofrece simplicidad operativa y fácil escalabilidad horizontal.</li>
+              <li>Diseño activo de principio a fin: ya que en todos los nodos se puede escribir y leer.</li>
+              <li>Rendimiento a escala lineal: la posibilidad de añadir nodos sin tener que frenar el ritmo produce aumentos en el rendimiento.</li>
+              <li>Detección de fallos y recuperación transparente: para nodos que no pueden ser fácilmente restaurados o reemplazados.</li>
+            </ul>
+            </p>
+
+            <h4>Neo4j</h4>
+            <p><strong>Base de datos de datos orientada a grafos</strong>es una base de datos diseñada para tratar las
+              relaciones entre los datos como igualmente importantes para los datos en sí. Está destinado a
+              contener datos sin restringirlos a un modelo predefinido. En cambio, los datos se almacenan
+              como los sacamos primero, mostrando cómo cada entidad individual se conecta o se relaciona
+              con otras.</p>
+
+            <p><strong>Que es Neo4j ????? </strong>es una base de datos de gráficos nativa NoSQL de código abierto que proporciona un
+              backend transaccional compatible con ACID para sus aplicaciones. Implementa de manera
+              eficiente el modelo de gráficos de propiedades hasta el nivel de almacenamiento. Esto significa
+              que los datos se almacenan exactamente como los escribe en la pizarra, y la base de datos usa
+              punteros para navegar y recorrer el gráfico.</p>
+            
+            <p><strong>Caracteristicas: </strong></p>
+            <ol>
+              <li>Cypher , un lenguaje de consulta declarativo similar a SQL, pero optimizado para gráficos</li>
+              <li>Esquema de gráfico de propiedad flexible que se puede adaptar con el tiempo, lo que permite
+                materializar y agregar nuevas relaciones más adelante para atajar y acelerar los datos del dominio
+                cuando las necesidades comerciales cambien.</li>
+                <li>Controladores para lenguajes de programación populares, incluidos Java, JavaScript, .NET, Python y
+                  muchos más.</li>
+            </ol>
+            
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- semana 6 --------- -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSix">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          Semana 6 - Examen Parcial I 
+        </button>
+      </h2>
+      
+    </div>
+
+      <br>
+      <br>
+
+    <!-- COMPUTO 2 ---------------------------------------------------------------- -->
+
+
+    <h2>Computo 2</h2>
+    <br>
+
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <!-- semana7 --------- -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="true" aria-controls="flush-collapseSix">
+            <b>Semana 7 - Generalidades de la seguridad de los datos</b>
+          </button>
+        </h2>
+        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p><strong>Hablar de seguridad de los datos </strong> se refiere a las
+              diversas medidas que toman las organizaciones para garantizar que sus bases de
+              datos estén protegidas de amenazas internas y externas.Esta seguridad de los
+              datos incluye proteger la propia base de datos, los datos que contiene, su sistema
+              de administración de bases de datos y las diversas aplicaciones que acceden a
+              ella.  </p>
+            
+            <p><strong>Consecuencias de las vulnerabilidades a los datos:</strong></p>
+            <ul>
+              <li>Sanciones civiles y penales impuestas por los gobiernos, incluidas multas y
+                sanciones.</li>
+              <li>Importantes multas e indemnizaciones por daños resultantes de demandas
+                privadas, incluidas las acciones colectivas.</li>
+              <li>Daño a la reputación de la empresa y la pérdida de la confianza de los
+                clientes, lo que resulta en la pérdida de ventas, participación de mercado
+                y valor de marca y accionistas.</li>
+            </ul>
+
+            <p><strong>Importancia de la seguridad de los datos: </strong>
+            <ol>
+              <li><b> Propiedad intelectual comprometida: </b> la propiedad intelectual (secretos
+                comerciales, invenciones, prácticas patentadas) puede ser fundamental
+                por la capacidad de mantener una ventaja competitiva en el mercado.</li>
+                <li><b> Daño a la reputación de la marca: </b> los clientes o socios pueden no estar
+                  dispuestos a comprar productos o servicios.</li>
+                <li><b> Continuidad del negocio (o falta de ella):</b>algunos negocios no pueden
+                  seguir funcionando hasta que se resuelva una infracción.</li>
+                <li><b> Multas o sanciones por incumplimiento:</b> el impacto financiero por no cumplir
+                  con las regulaciones globales, así como regulaciones locales, pueden ser
+                  devastadoras, con imposición de multas por violación.</li>
+            </ol>
+            </p>
+
+            <p><strong>Principales amenazas y desafios comunes para los datos:</strong>
+            <ul>
+              <li>Amenazas internas</li>
+              <li>Errores humanos</li>
+              <li>Vulnerabilidades de software</li>
+              <li>Explotaciones de desbordamiento de búfer</li>
+              <li>Software malicioso</li>
+              <li>Ataques de denegacion de servicios(DoS/DDoS)</li>
+              <li>Ataques de inyección SQL/NoSQL</li>
+              <li>Riesgo a las copias de seguridad.</li>
+            </ul>
+            </p>
+
+            <strong>Mejores practicas, politicas y controles para la seguridad de los datos.</strong>
+          </div>
+        </div>
+      </div>
+
+
+
+     <!--  semana 8 ------ -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingDOS">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDOS" aria-expanded="false" aria-controls="collapseDOS">
+            Semana 8 - AMENAZAS, RIESGOS Y VULNERABILIDADES DE LAS BASES DE DATOS.
+          </button>
+        </h2>
+        <div id="collapseDOS" class="accordion-collapse collapse" aria-labelledby="headingDOS" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+           
+            <p><strong>Principales amenazas para los datos:</strong>
+            <ol>
+              <li>Ausencia de contraseñas</li>
+              <li>Privilegios excesivos</li>
+              <li>Vulnerabilidades de la plataforma</li>
+              <li>Inyección de sql</li>
+              <li>Auditoría débil</li>
+              <li>Denegación de servicio</li>
+              <li>La Exposición De Los Datos De Backup</li>
+              <li>Desbordamiento de búfer</li>
+              <li>Bases de datos sin actualizar</li>
+              <li>Datos sencibles sin cifrado.</li>
+            </ol>
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <!-- semana 9 --*----- -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingNUEVE">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNUEVE" aria-expanded="false" aria-controls="collapseNUEVE">
+            Semana 9 - Normas ISO para la proteccion de los datos.
+          </button>
+        </h2>
+        <div id="collapseNUEVE" class="accordion-collapse collapse" aria-labelledby="headingNUEVE" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+           
+            <p><strong>La norma ISO </strong> es establecida por la Organización Internacional de estándares
+              (ISO), y se compone de estándares y guías relacionados con sistemas y
+              herramientas específicas de gestión aplicables en cualquier tipo de
+              organización</p>
+            
+            <p><strong>ISO 27001 </strong>es el conjunto de requisitos para implementar un SGSI. 
+              Es la única norma certificable de las que se incluyen en la lista y consta de una parte 
+              principal basada en el ciclo de mejora continua y un Anexo A, en el que se detallan las 
+              líneas generales de los controles propuestos por el estándar.</p>
+
+            <p><strong>ISO 27002</strong> se trata de una recopilación de buenas prácticas para la Seguridad 
+              de la Información que describe los controles y objetivos de control. Actualmente cuentan con 14 
+              dominios, 35 objetivos de control y 114 controles.</p>
+
+          </div>
+        </div>
+      </div>
+
+
+      
+
+      <!-- semana 10 --*----- -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingDIEZ">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDIEZ" aria-expanded="false" aria-controls="collapseDIEZ">
+            Semana 10 - Creacion de plan de seguridad AVANCE 1
+          </button>
+        </h2>
+        <div id="collapseDIEZ" class="accordion-collapse collapse" aria-labelledby="headingDIEZ" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+           
+            <h5>Desarrollo del CAPITULO 1:</h5>
+            <ul>
+              <li>Portada</li>
+              <li>Introducción</li>
+              <li>Objetivo general y especificos</li>
+              <li>Planificacion de actividades (Cronograma)</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+       <!-- semana 11 --*----- -->
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="headingONCE">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseONCE" aria-expanded="false" aria-controls="collapseONCE">
+            Semana 11 - Creacion de plan de seguridad AVANCE 2
+          </button>
+        </h2>
+        <div id="collapseONCE" class="accordion-collapse collapse" aria-labelledby="headingONCE" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+           
+           <p>Avance en la recoleccion de la información para la creacion del plan de Seguridad</p>
+           <p><strong>Preguntas usadas para la recoleccion de la informacion</strong></p>
+            <img src="imagenes/entrevista1.jpg" width="50%" alt="">
+            <img src="imagenes/entrevista2.jpg" width="50%" alt="">
+            <img src="imagenes/entrevista3.jpg" width="50%" alt="">
+            <img src="imagenes/entrevista4.jpg" width="50%" alt="">
+            
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+       <!-- semana 12 --*----- -->
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="headingDOCE">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDOCE" aria-expanded="false" aria-controls="collapseDOCE">
+            Semana 12 - Creacion de plan de seguridad AVANCE 3
+          </button>
+        </h2>
+        <div id="collapseDOCE" class="accordion-collapse collapse" aria-labelledby="headingDOCE" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+           
+            <h5>Avance del plan de seguridad: CAPITULO 2, se desarrollaron los siguientes apartados.</h5>
+            <ul>
+              <li>Situacion actual de la organizacion</li>
+              <li>Descripcion de la organizacion.</li>
+              <li>Actividad y entorno de la organizacion</li>
+              <li>Tamaño y estructura organizacional</li>
+              <li>Analisis de riesgo.</li>
+              <li>Identificación de activos(algo que tiene el valor a utilidad dentro de la organización para realizar sus operaciones.).</li>
+              <li>Identificacion de amenazas y vulnerabilidades</li>
+              <li>Calculo de la probabilidad.</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+
+
+       <!-- semana 13 --*----- -->
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTRECE">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTRECE" aria-expanded="false" aria-controls="collapseTRECE">
+            Semana 13 - Creacion de plan de seguridad AVANCE 4
+          </button>
+        </h2>
+        <div id="collapseTRECE" class="accordion-collapse collapse" aria-labelledby="headingTRECE" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+           
+            <h5>Finalizacion del CAPITULO 2 y Desarrollo del CAPITULO 3</h5>
+
+            <h6>Capitulo 2:</h6>
+            <ul>
+              <li>Calculo del riesgo residual.</li>
+              <li>Propuesta.</li>
+              <li>Plan de acción -- controles sugeridos.</li>
+            </ul>
+
+            <h6>Capitulo 3</h6>
+            <ul>
+              <li>Conclusiones.</li>
+              <li>Recomendaciones.</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+
+       <!-- semana 14 --*----- -->
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="headingCATORCE">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCATORCE" aria-expanded="false" aria-controls="collapseCATORCE">
+            Semana 14 - Examen parcial II - Presentacion y defensa del Plan de Seguridad
+          </button>
+        </h2>
+        <div id="collapseCATORCE" class="accordion-collapse collapse" aria-labelledby="headingCATORCE" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+           
+            <p><strong>Presentacion grupal para la defensa del Plan de seguridad elaborado en las 4 semanas anteriores</strong></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  
+    <br>
+    <br>
+    <br>
+    
+</body>
+</html>
